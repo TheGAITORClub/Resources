@@ -1,0 +1,179 @@
+<html>
+<head><title>Image map created by yEd</title>
+<style type="text/css">
+.tooltip {
+  font-size:10pt;
+  background-color:#FFFFCC;
+  border:1px solid black;
+  padding:2px
+}
+</style>
+<style type="text/css">
+.tooltip {
+  position:absolute;
+  display:none
+}
+</style>
+</head>
+<body>
+
+<script type="text/javascript">
+tooltip = null;
+document.onmousemove = updateTooltip;
+function updateTooltip(e) {
+try {
+if (document.all) {
+if (document.documentElement && document.documentElement.scrollTop) { // Explorer 6 Strict
+x = document.documentElement.scrollLeft + window.event.x;
+y = document.documentElement.scrollTop + window.event.y;
+}
+else { // all other Explorers
+x = document.body.scrollLeft + window.event.x;
+y = document.body.scrollTop + window.event.y;
+}
+}
+else {
+x = e.pageX;
+y = e.pageY;
+}
+if (tooltip != null) {
+o = 20;
+var sx, sy;
+if (self.pageYOffset) { // all except Explorer
+sx = self.pageXOffset;
+sy = self.pageYOffset;
+}
+else if (document.documentElement && document.documentElement.scrollTop) { // Explorer 6 Strict
+sx = document.documentElement.scrollLeft;
+sy = document.documentElement.scrollTop;
+}
+else if (document.body) { // all other Explorers
+sx = document.body.scrollLeft;
+sy = document.body.scrollTop;
+}
+t = y + o + tooltip.offsetHeight;
+w = sy + document.body.clientHeight;
+if (t > w) {
+y = y - o - tooltip.offsetHeight;
+}
+else {
+y = y + o;
+}
+t = x + o + tooltip.offsetWidth;
+w = sx + document.body.clientWidth;
+if (t > w) {
+x = x - o - tooltip.offsetWidth;
+}
+else {
+x = x + o;
+}
+if ((tooltip.style.top == '' || tooltip.style.top == 0) && (tooltip.style.left == '' || tooltip.style.left == 0))
+{
+tooltip.style.width = tooltip.offsetWidth + 'px';
+tooltip.style.height = tooltip.offsetHeight + 'px';
+}
+tooltip.style.left = x + "px";
+tooltip.style.top = y + "px";
+}
+} catch (error) { error = null; }
+}
+function showTooltip(id) {
+try {
+tooltip = document.getElementById(id);
+tooltip.style.display = "block";
+} catch (error) { error = null; }
+}
+function hideTooltip() {
+try {
+tooltip.style.display = "none";
+} catch (error) { error = null; }
+}
+</script>
+
+<div class="tooltip" id="n0">Getting Started</div>
+<div class="tooltip" id="n1">Summer 2021 Blueprint</div>
+<div class="tooltip" id="n3">Yes</div>
+<div class="tooltip" id="n4">No</div>
+<div class="tooltip" id="n5">Do You Have Experience With AI Tools/Concepts?</div>
+<div class="tooltip" id="n6">Which Concept Interests You? </div>
+<div class="tooltip" id="n7">Categorization</div>
+<div class="tooltip" id="n8">Classification</div>
+<div class="tooltip" id="n9">Collaborative Filtering</div>
+<div class="tooltip" id="n10">Machine Learning</div>
+<div class="tooltip" id="n11">APIs</div>
+<div class="tooltip" id="n12">Libraries</div>
+<div class="tooltip" id="n13">Amazon</div>
+<div class="tooltip" id="n14">Google</div>
+<div class="tooltip" id="n15">IBM</div>
+<div class="tooltip" id="n16">NLTK</div>
+<div class="tooltip" id="n17">scikit</div>
+<div class="tooltip" id="n18">TensorFlow</div>
+<div class="tooltip" id="n19">Google</div>
+<div class="tooltip" id="n20">LibRec</div>
+<div class="tooltip" id="n21">Implicit</div>
+<div class="tooltip" id="n22">scikit</div>
+<div class="tooltip" id="n23">PyTorch</div>
+<div class="tooltip" id="n24">TensorFlow</div>
+<div class="tooltip" id="n25">Weka</div>
+<div class="tooltip" id="n26">Keras</div>
+<div class="tooltip" id="n27">What is artificial intelligence?</div>
+<div class="tooltip" id="n28">Interesting...but I am still a little lost.</div>
+<div class="tooltip" id="n29">Where can I actually get experience with AI?</div>
+<div class="tooltip" id="n30">Are there existing AI projects I can see?</div>
+<div class="tooltip" id="n31">Which platforms utilize AI?</div>
+<div class="tooltip" id="n32">Google</div>
+<div class="tooltip" id="n33">IBM</div>
+<div class="tooltip" id="n34">NVIDIA</div>
+<div class="tooltip" id="n35">Amazon</div>
+<div class="tooltip" id="n36">If you have any more questions</div>
+<div class="tooltip" id="n37">Reach out to us on Discord!</div>
+
+<map name="image1_1">
+  <area shape="rect" coords="3388,1928,3468,1968" alt="" onmouseover="showTooltip('n37')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="3220,1740,3637,1780" alt="" onmouseover="showTooltip('n36')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="2885,2085,3004,2125" href="https://aws.amazon.com/ai/" alt="" onmouseover="showTooltip('n35')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2885,1881,3004,1921" href="https://www.nvidia.com/en-us/research/ai-playground/" alt="" onmouseover="showTooltip('n34')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2885,1703,2965,1743" href="https://www.ibm.com/training/ailearning" alt="" onmouseover="showTooltip('n33')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2885,1525,3004,1565" href="https://developers.google.com/machine-learning/problem-framing/?utm_source=googleAI&utm_medium=card-image&utm_campaign=training-hub&utm_term&utm_content=problem-framing" alt="" onmouseover="showTooltip('n32')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2171,1525,2588,1565" alt="" onmouseover="showTooltip('n31')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="2339,1367,2419,1407" href="https://experiments.withgoogle.com/collection/ai" alt="" onmouseover="showTooltip('n30')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2095,1209,2664,1249" href="https://ai.google/education/" alt="" onmouseover="showTooltip('n29')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2885,1050,3425,1090" href="https://www.ibm.com/cloud/learn/what-is-artificial-intelligence" alt="" onmouseover="showTooltip('n28')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2144,1050,2614,1090" href="https://www.youtube.com/watch?v=2ePf9rue1Ao" alt="" onmouseover="showTooltip('n27')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1769,2149,1849,2189" href="https://keras.io/" alt="" onmouseover="showTooltip('n26')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1769,2031,1849,2071" href="https://www.cs.waikato.ac.nz/ml/weka/" alt="" onmouseover="showTooltip('n25')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1769,1913,1849,1953" href="https://www.tensorflow.org/" alt="" onmouseover="showTooltip('n24')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1769,1796,1849,1836" href="https://pytorch.org/" alt="" onmouseover="showTooltip('n23')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1769,1678,1849,1718" href="https://scikit-learn.org/stable/" alt="" onmouseover="showTooltip('n22')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1185,1913,1265,1953" href="https://implicit.readthedocs.io/en/latest/" alt="" onmouseover="showTooltip('n21')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1185,1796,1265,1836" href="https://guoguibing.github.io/librec/index.html" alt="" onmouseover="showTooltip('n20')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1185,1678,1265,1718" href="https://developers.google.com/machine-learning/recommendation/collaborative/basics" alt="" onmouseover="showTooltip('n19')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="855,2244,1039,2284" href="https://www.tensorflow.org/install" alt="" onmouseover="showTooltip('n18')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="855,2105,961,2145" href="https://scikit-learn.org/stable/modules/svm.html#classification" alt="" onmouseover="showTooltip('n17')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="855,1965,961,2005" href="https://www.nltk.org/" alt="" onmouseover="showTooltip('n16')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="284,2244,426,2284" href="https://www.ibm.com/watson/services/natural-language-classifier/" alt="" onmouseover="showTooltip('n15')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="284,2105,426,2145" href="https://cloud.google.com/natural-language/docs/classifying-text" alt="" onmouseover="showTooltip('n14')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="284,1965,426,2005" href="https://docs.aws.amazon.com/comprehend/latest/dg/how-document-classification.html" alt="" onmouseover="showTooltip('n13')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="699,1796,779,1836" alt="" onmouseover="showTooltip('n12')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="504,1796,584,1836" alt="" onmouseover="showTooltip('n11')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1769,1556,1849,1596" alt="" onmouseover="showTooltip('n10')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1185,1556,1265,1596" alt="" onmouseover="showTooltip('n9')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="600,1556,680,1596" alt="" onmouseover="showTooltip('n8')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="74,1556,154,1596" alt="" onmouseover="showTooltip('n7')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="993,1205,1073,1245" alt="" onmouseover="showTooltip('n6')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1652,544,2332,585" alt="" onmouseover="showTooltip('n5')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="2339,892,2419,932" alt="" onmouseover="showTooltip('n4')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1564,892,1644,932" alt="" onmouseover="showTooltip('n3')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1952,230,2032,270" alt="" onmouseover="showTooltip('n1')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1952,160,2032,200" alt="" onmouseover="showTooltip('n0')" onmouseout="hideTooltip()"/>
+</map>
+
+
+    <table class="yimagetable" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td><img class="yimage" src="SummerResourceGuideV21_1.png" usemap="#image1_1" border="0" alt=""/></td>
+      </tr>
+    </table>
+
+</body>
+</html>
