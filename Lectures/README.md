@@ -36,7 +36,7 @@
 - Iterating columns
 - Iterating rows
 
-#### Using APIs
+#### Using APIs (bonus if you're a true gamer)
 
 - OAuth & API Key
 - TBD
@@ -46,3 +46,4 @@
 
 ## Week 2
 
+### TBD... Titanic??
