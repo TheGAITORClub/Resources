@@ -5,21 +5,11 @@
 ### Running on Kaggle (Suggested)
 
 1. Sign-In or create an account on Kaggle (Required)
-2. Go to <https://www.kaggle.com/uysimty/keras-cnn-dog-or-cat-classification>
+2. Go to <https://www.kaggle.com/kyledampier/ml-monday-week-4>
+   - Forked from: <https://www.kaggle.com/uysimty/keras-cnn-dog-or-cat-classification/data>
 3. At the top right of the website, copy this notebook
 4. Unzip the files using python zip library and change where files are being accessed as running.
-5. Go through the code, and change train and test directories accordingly
-
-```python
-import zipfile
-
-def unzip_file(path_to_zip_file, directory_to_extract_to):
-    with zipfile.ZipFile(path_to_zip_file, 'r') as zip_ref:
-        zip_ref.extractall(directory_to_extract_to)
-        
-unzip_file("../input/train.zip", "./train")
-unzip_file("../input/test1.zip", "./test")
-```
+5. You're all ready
 
 ### Running Locally
 
